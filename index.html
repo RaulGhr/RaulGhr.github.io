@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <title>Ce faci?</title>
+</head>
+<body>
+    <div class="spate">
+        <div id="prez" class="card prezentare">
+            <h1>Te plictisesti?</h1>
+            <img src="main.jpg" alt="">
+            <div class="butoane">
+                <div ontouchstart="next(this)">DA</div>
+                <div ontouchstart="next(this)">NU</div>
+            </div>
+        </div>
+        <div id="rez" class="card rezultat">
+            <h1>Hai la cafeluta</h1>
+            <img src="rez.jpg" alt="">
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>
+<script>
+    function next(element){
+        document.getElementById("prez").style.display = "none"
+        document.getElementById("rez").style.display = "flex"
+    }
+</script>
